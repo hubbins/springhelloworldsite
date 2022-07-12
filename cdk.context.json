@@ -1,0 +1,62 @@
+{
+  "vpc-provider:account=152303423357:filter.tag:Name=directpl-non-prod:region=us-east-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-e7368081",
+    "vpcCidrBlock": "10.255.24.0/22",
+    "availabilityZones": [],
+    "vpnGatewayId": "vgw-089e2bc9c4195248f",
+    "subnetGroups": [
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-8e0075a3",
+            "cidr": "10.255.24.0/24",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-04eb007d"
+          },
+          {
+            "subnetId": "subnet-a1c09be8",
+            "cidr": "10.255.25.0/24",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-07eb007e"
+          },
+          {
+            "subnetId": "subnet-ecdebdb7",
+            "cidr": "10.255.26.0/24",
+            "availabilityZone": "us-east-1d",
+            "routeTableId": "rtb-05eb007c"
+          }
+        ]
+      },
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-8f0075a2",
+            "cidr": "10.255.27.0/26",
+            "availabilityZone": "us-east-1b",
+            "routeTableId": "rtb-02eb007b"
+          },
+          {
+            "subnetId": "subnet-aec09be7",
+            "cidr": "10.255.27.64/26",
+            "availabilityZone": "us-east-1c",
+            "routeTableId": "rtb-02eb007b"
+          },
+          {
+            "subnetId": "subnet-e3debdb8",
+            "cidr": "10.255.27.128/26",
+            "availabilityZone": "us-east-1d",
+            "routeTableId": "rtb-02eb007b"
+          }
+        ]
+      }
+    ]
+  },
+  "hosted-zone:account=152303423357:domainName=dir9633c.easn.morningstar.com.:region=us-east-1": {
+    "Id": "/hostedzone/Z2RTVACZDR2SKR",
+    "Name": "dir9633c.easn.morningstar.com."
+  }
+}
